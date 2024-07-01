@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css"
+    />
+    <link rel="icon" href="./images/self-introduction.png" />
+    <title>Portfolio</title>
+  </head>
+  <body class="">
+    <!-- Header starts -->
+    <header
+      class="flex items-center justify-between p-5 shadow-md bg-slate-800"
+    >
+      <div class="logo text-2xl font-bold text-white">My Portfolio</div>
+      <nav class="hidden justify-center items-center md:flex md:flex-grow">
+        <ul class="flex space-x-4">
+          <li>
+            <a href="#home" class="hover:text-blue-500 text-white">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-blue-500 text-white">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-blue-500 text-white">Skills</a>
+          </li>
+          <li>
+            <a href="#certifications" class="hover:text-blue-500 text-white"
+              >Certifications</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-blue-500 text-white"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-blue-500 text-white"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button
+        id="theme-toggle"
+        class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition duration-300 mt-1 hover:rounded-md hover:scale-105"
+      >
+        Dark/Light
+      </button>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Home section starts -->
+
+    <section
+      id="home"
+      class="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-900 to-bg-slate-800 text-white text-center bg-slate-800"
+    >
+      <h1 class="text-4xl font-bold mb-4 text-center">
+        Welcome to My Portfolio
+      </h1>
+      <p class="text-xl mb-5 text-center">
+        I am a Web Developer and I am passionate about the MERN Stack
+      </p>
+      <img
+        src="./images/Yash_img.jpg"
+        alt="Profile Image"
+        class="w-76 h-72 rounded-full mb-5 transform transition duration-500 hover:scale-105 drop-shadow-xl"
+      />
+      <div class="flex space-x-4 mb-4">
+        <a
+          href="https://www.facebook.com/"
+          class="hover:text-gray-400 transform transition duration-500 hover:scale-125"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="23"
+            width="21"
+            viewBox="0 0 320 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+            /></svg
+        ></a>
+        <a
+          href="#"
+          class="hover:text-gray-400 transform transition duration-500 hover:scale-125"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="24"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+            /></svg
+        ></a>
+        <a
+          href="#"
+          class="hover:text-gray-400 transform transition duration-500 hover:scale-125"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="21"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+            /></svg
+        ></a>
+        <a
+          href="#"
+          class="hover:text-gray-400 transform transition duration-500 hover:scale-125"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="23.25"
+            viewBox="0 0 496 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            /></svg
+        ></a>
+      </div>
+      <a
+        href="./files/Yash Wasankar pdf.pdf"
+        class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition duration-300 mt-1 hover:rounded-md hover:scale-x-110"
+        >Download Resume</a
+      >
+    </section>
+
+    <!-- Home section ends -->
+
+    <!-- About me section starts -->
+    <section
+      id="about"
+      class="p-10 bg-gradient-to-r from-blue-800 text-white text-center bg-slate-800"
+    >
+      <h2
+        class="text-3xl font-bold mb-6 transition duration-300 hover:scale-105"
+      >
+        About <span class="text-blue-500">Me</span>
+      </h2>
+      <div class="flex flex-col md:flex-col items-center">
+        <img
+          src="./images/MERN-Stack-Development.png"
+          alt="Profile Image"
+          class="w-68 h-64 mr-6 md:mb-2 transform transition duration-500 hover:scale-105 drop-shadow-xl mb-8"
+        />
+        <p class="flex-1 text-center">
+          Hello! My name is
+          <span class="font-bold hover:text-blue-400">Yash Wasankar</span>, and
+          I am a passionate full-stack developer specializing in the MERN
+          (MongoDB, Express.js, React, Node.js) Stack <br /><br />
+          My journey with the MERN Stack began with a deep interest in building
+          dynamic and scalable web applications. Over time, I have gained
+          proficiency in each component of the stack <br />
+          <span class="font-bold">MongoDB:</span> Leveraging this NoSQL
+          database, I have implemented robust data storage solutions that scale
+          effortlessly with application demand. <br />
+          <span class="font-bold">Express.js:</span> I have used this minimalist
+          web framework to build efficient server-side applications, ensuring
+          seamless communication between the frontend and backend. <br />
+          <span class="font-bold">React:</span> My work with React has involved
+          creating responsive and interactive user interfaces, focusing on
+          enhancing user experience through component-based architecture. <br />
+          <span class="font-bold">Node.js:</span> Utilizing Node.js, I have
+          developed high-performance server-side applications, taking advantage
+          of its non-blocking I/O and event-driven architecture. <br /><br />
+          In addition to my expertise in the MERN Stack, I possess a strong
+          background in <span class="font-bold">Java programming</span>. Java
+          was my first introduction to the world of programming, where I
+          developed a solid foundation in core programming concepts. Here’s a
+          glimpse of my Java experience: <br />
+          <span class="font-semibold">Console Applications:</span> I started
+          with simple console applications, learning the basics of syntax,
+          control structures, and error handling. Web Services: I have also
+          worked on complex web services, employing frameworks like Spring and
+          Hibernate to build robust and scalable applications. <br />
+          <span class="font-semibold">Core Concepts:</span> My experience has
+          honed my understanding of object-oriented programming, data
+          structures, algorithms, and design patterns. Unique Perspective on
+          Full-Stack Development Combining my knowledge of Java with my MERN
+          Stack skills has provided me with a unique perspective on full-stack
+          development. <br />
+          <span class="font-semibold">This synergy allows me to:</span> Design
+          and develop comprehensive solutions that integrate seamlessly across
+          the stack. Employ best practices from both ecosystems to enhance
+          application performance and maintainability. Address a wide range of
+          development challenges, from backend efficiency to frontend usability.
+        </p>
+      </div>
+      <button
+        class="mt-4 bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition duration-300 hover:rounded-md hover:scale-x-110"
+      >
+        Read More
+      </button>
+    </section>
+
+    <!-- Skills section starts -->
+
+    <section
+      id="skills"
+      class="p-10 bg-gradient-to-r from-blue-800 text-white text-center bg-slate-700"
+    >
+      <h2
+        class="text-3xl font-bold mb-4 transition duration-300 hover:scale-110"
+      >
+        My <span class="text-blue-500">Skills</span>
+      </h2>
+      <div class="space-y-4 drop-shadow-2xl">
+        <div
+          class="flex items-center transition duration-300 hover:scale-y-110"
+        >
+          <span class="flex-1 m-2">HTML</span>
+          <div class="w-full bg-gray-300 rounded h-6">
+            <div class="bg-blue-500 h-6 rounded" style="width: 90%"></div>
+          </div>
+          <span class="ml-4">90%</span>
+        </div>
+        <div
+          class="flex items-center transition duration-300 hover:scale-y-110"
+        >
+          <span class="flex-1 m-2">CSS</span>
+          <div class="w-full bg-gray-300 rounded h-6">
+            <div class="bg-blue-500 h-6 rounded" style="width: 80%"></div>
+          </div>
+          <span class="ml-4">80%</span>
+        </div>
+        <div
+          class="flex items-center transition duration-300 hover:scale-y-110"
+        >
+          <span class="flex-1 m-3">JavaScript</span>
+          <div class="w-full bg-gray-300 rounded h-6">
+            <div class="bg-blue-500 h-6 rounded" style="width: 75%"></div>
+          </div>
+          <span class="ml-4">75%</span>
+        </div>
+        <div
+          class="flex items-center transition duration-300 hover:scale-y-110"
+        >
+          <span class="flex-1 m-3">ReactJS</span>
+          <div class="w-full bg-gray-300 rounded h-6">
+            <div class="bg-blue-500 h-6 rounded" style="width: 60%"></div>
+          </div>
+          <span class="ml-4">60%</span>
+        </div>
+        <div
+          class="flex items-center transition duration-300 hover:scale-y-110"
+        >
+          <span class="flex-1 m-3">ExpressJS</span>
+          <div class="w-full bg-gray-300 rounded h-6">
+            <div class="bg-blue-500 h-6 rounded" style="width: 58%"></div>
+          </div>
+          <span class="ml-4">58%</span>
+        </div>
+        <div
+          class="flex items-center transition duration-300 hover:scale-y-110"
+        >
+          <span class="flex-1 m-3">NodeJS</span>
+          <div class="w-full bg-gray-300 rounded h-6">
+            <div class="bg-blue-500 h-6 rounded" style="width: 55%"></div>
+          </div>
+          <span class="ml-4">55%</span>
+        </div>
+        <div
+          class="flex items-center transition duration-300 hover:scale-y-110"
+        >
+          <span class="flex-1 m-3">MongoDB</span>
+          <div class="w-full bg-gray-300 rounded h-6">
+            <div class="bg-blue-500 h-6 rounded" style="width: 70%"></div>
+          </div>
+          <span class="ml-4">70%</span>
+        </div>
+        <div
+          class="flex items-center transition duration-300 hover:scale-y-110"
+        >
+          <span class="flex-1 m-3">Java</span>
+          <div class="w-full bg-gray-300 rounded h-6">
+            <div class="bg-blue-500 h-6 rounded" style="width: 83%"></div>
+          </div>
+          <span class="ml-4">83%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section ends -->
+
+    <!-- certifications section starts -->
+
+    <section
+      id="certifications"
+      class="p-10 bg-gradient-to-r from-blue-700 text-white text-center bg-slate-800"
+    >
+      <h2
+        class="text-3xl font-bold mb-6 transition duration-300 hover:scale-105 hover:text-blue-500"
+      >
+        Certifications
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div
+          class="bg-blue-700 p-4 drop-shadow-2xl transition duration-300 hover:scale-105 rounded-md border-slate-400 hover:border-indigo-300"
+        >
+          <h3 class="text-xl font-semibold mb-2">
+            Web Development Certificate
+          </h3>
+          <p>
+            Three-months web development internship at ICEICO Technologies Pvt.
+            Ltd.
+          </p>
+          <p>
+            <a
+              href="./files/Web development certificate.pdf"
+              class="text-center w-auto block mt-4 bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition duration-300 hover:rounded-md"
+              >View Certificate</a
+            >
+          </p>
+        </div>
+
+        <div
+          class="p-4 bg-blue-700 drop-shadow-2xl transition duration-300 hover:scale-105 rounded-md border-slate-400 hover:border-indigo-300"
+        >
+          <h3 class="text-xl font-semibold mb-2">
+            Web5 Fundamentals Certificate
+          </h3>
+          <p>
+            Learned about web 5,Tech stack behind Web5, different Web5
+            components provided by Udemy
+          </p>
+          <a
+            href="./files/Web5_fundamentals.pdf"
+            class="ext-center w-auto block mt-4 bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition duration-300 hover:rounded-md"
+            >View Certificate</a
+          >
+        </div>
+        <div
+          class="p-4 bg-blue-700 drop-shadow-2xl transition duration-300 hover:scale-105 rounded-md border-slate-400 hover:border-indigo-300"
+        >
+          <h3 class="text-xl font-semibold mb-2">
+            Salesforce internship Certificate
+          </h3>
+          <p>
+            Salesforce Administrator Virtual Internship provided by Salesforce
+          </p>
+          <a
+            href="./files/Salesforce.pdf"
+            class="ext-center w-auto block mt-4 bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition duration-300 hover:rounded-md"
+            >View Certificate</a
+          >
+        </div>
+        <div
+          class="p-4 bg-blue-700 drop-shadow-2xl transition duration-300 hover:scale-105 rounded-md border-slate-400 hover:border-indigo-300"
+        >
+          <h3 class="text-xl font-semibold mb-2">AL & ML Certificate</h3>
+          <p>
+            "Sentiment Analysis on Social Media" project completion provided by
+            the Talent Battle platform
+          </p>
+          <a
+            href="./files/ML_Project.pdf"
+            class="ext-center w-auto block mt-4 bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition duration-300 hover:rounded-md"
+            >View Certificate</a
+          >
+        </div>
+        <div
+          class="p-4 bg-blue-700 drop-shadow-2xl transition duration-300 hover:scale-105 rounded-md border-slate-400 hover:border-indigo-300"
+        >
+          <h3 class="text-xl font-semibold mb-2">AI & ML Virtual Internship</h3>
+          <p>AI & ML Virtual Internship and Supported by India Edu Program</p>
+          <a
+            href="./files/AI&ML.pdf"
+            class="ext-center w-auto block mt-4 bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition duration-300 hover:rounded-md"
+            >View Certificate</a
+          >
+        </div>
+        <div
+          class="p-4 bg-blue-700 drop-shadow-2xl transition duration-300 hover:scale-105 rounded-md border-slate-400 hover:border-indigo-300"
+        >
+          <h3 class="text-xl font-semibold mb-2">
+            CyberSecurity Virtual Internship
+          </h3>
+          <p>
+            Cyber Security Virtual Internship and supported by Paloalto network
+          </p>
+          <a
+            href="./files/CyberSecurity.pdf"
+            class="ext-center w-auto block mt-4 bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition duration-300 hover:rounded-md"
+            >View Certificate</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications section ends -->
+
+    <!-- Project section starts -->
+
+    <section
+      id="projects"
+      class="p-10 bg-gradient-to-r from-blue-800 text-white text-center bg-slate-800"
+    >
+      <h2
+        class="text-3xl font-bold mb-6 transition duration-300 hover:scale-105 hover:text-blue-500"
+      >
+        Projects
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div
+          class="p-4 bg-blue-700 drop-shadow-2xl transition duration-300 hover:scale-105 rounded-md border-slate-400 hover:border-indigo-300"
+        >
+          <h3 class="text-xl font-semibold mb-2">Web Development Project</h3>
+          <p>
+            Completed three projects using HTML, CSS, JavaScript, and MERN stack
+            with Tailwind CSS.
+          </p>
+        </div>
+        <div
+          class="p-4 bg-blue-700 drop-shadow-2xl transition duration-300 hover:scale-105 rounded-md border-slate-400 hover:border-indigo-300"
+        >
+          <h3 class="text-xl font-semibold mb-2">AI and ML Project</h3>
+          <p>
+            Developed a sentiment analysis project using AI and ML techniques.
+          </p>
+        </div>
+        <div
+          class="p-4 bg-blue-700 drop-shadow-2xl transition duration-300 hover:scale-105 rounded-md border-slate-400 hover:border-indigo-300"
+        >
+          <h3 class="text-xl font-semibold mb-2">Salesforce Project</h3>
+          <p>
+            Created a hospital and airline management system using Salesforce
+            technology
+          </p>
+        </div>
+        <div
+          class="p-4 bg-blue-700 drop-shadow-2xl transition duration-300 hover:scale-105 rounded-md border-slate-400 hover:border-indigo-300"
+        >
+          <h3 class="text-xl font-semibold mb-2">Currency Converter</h3>
+          <p>
+            Basic project in Java that is used to convert a currency from one to
+            another
+          </p>
+        </div>
+        <div
+          class="p-4 bg-blue-700 drop-shadow-2xl transition duration-300 hover:scale-105 rounded-md border-slate-400 hover:border-indigo-300"
+        >
+          <h3 class="text-xl font-semibold mb-2">
+            QuizUp - A Quiz Application
+          </h3>
+          <p>
+            Application will provide convenience in MCQ mode of examinations and
+            screening tests using Java
+          </p>
+        </div>
+        <div
+          class="p-4 bg-blue-700 drop-shadow-2xl transition duration-300 hover:scale-105 rounded-md border-slate-400 hover:border-indigo-300"
+        >
+          <h3 class="text-xl font-semibold mb-2">Library Management System</h3>
+          <p>
+            Resource planning system for a library, used to track items owned,
+            orders made, bills paid, and patrons using Java
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project section ends -->
+
+    <!-- Contact section starts -->
+
+    <section
+      id="contact"
+      class="p-10 flex justify-center items-center bg-gradient-to-r from-blue-900 text-white bg-slate-900"
+    >
+      <div class="w-full max-w-2xl p-6 m-2 bg-blue-800 rounded-xl">
+        <h2
+          class="text-3xl font-bold mb-4 text-center transition duration-300 hover:scale-105"
+        >
+          Contact <span class="text-blue-500">Me</span>
+        </h2>
+        <form action="#" method="post" class="space-y-4 text-center">
+          <div>
+            <label for="name" class="block text-start p-1">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Full Name"
+              class="w-full p-2 border border-gray-300 rounded"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-start p-1">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email Address"
+              class="w-full p-2 border border-gray-300 rounded"
+            />
+          </div>
+          <div>
+            <label for="message" class="block text-start p-1">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Ask any queries"
+              class="w-full p-2 border border-gray-300 rounded"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-white text-blue-500 px-4 py-2 rounded hover:rounded-md hover:bg-blue-500 transition duration-300 w-28 hover:text-white hover:scale-x-105"
+            ext-center
+            w-auto
+            block
+            mt-4
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact us section ends -->
+
+    <!-- Footer section starts -->
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap justify-between">
+          <!-- Company Info -->
+          <div class="w-full sm:w-1/2 lg:w-1/4 mb-4">
+            <h2 class="text-xl font-bold mb-2">Yash Wasankar</h2>
+            <p class="mb-4">MERN Stack Developer</p>
+            <p class="text-sm">&copy; 2024 Yash Wasankar</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="w-full sm:w-1/2 lg:w-1/4 mb-2 p-1">
+            <h3 class="text-lg font-bold mb-2">Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#home" class="hover:text-blue-500 text-white">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="hover:text-blue-500 text-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#skills" class="hover:text-blue-500 text-white"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a href="#certifications" class="hover:text-blue-500 text-white"
+                  >Certifications</a
+                >
+              </li>
+              <li>
+                <a href="#projects" class="hover:text-blue-500 text-white"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-blue-500 text-white"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="w-full sm:w-1/2 lg:w-1/4 mb-8 bg-slate-800">
+            <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+            <ul class="flex space-x-4">
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  class="hover:text-gray-400 transform transition duration-500 hover:scale-150"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="23"
+                    width="21"
+                    viewBox="0 0 320 512"
+                  >
+                    <path
+                      fill="#ffffff"
+                      d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-gray-400 transform transition duration-500 hover:scale-125"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#ffffff"
+                      d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-gray-400 transform transition duration-500 hover:scale-125"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    width="21"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="#ffffff"
+                      d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-gray-400 transform transition duration-500 hover:scale-125"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    width="23.25"
+                    viewBox="0 0 496 512"
+                  >
+                    <path
+                      fill="#ffffff"
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="w-full sm:w-1/2 lg:w-1/4 mb-8 pl-4">
+            <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+            <p class="text-sm p-1">
+              Email:
+              <a href="yashwasankar008@gmail.com" class="hover:underline"
+                >yashwasankar008@gmail.com</a
+              >
+            </p>
+            <p class="text-sm p-1">Phone: +91 7219698969</p>
+            <p class="text-sm p-1">Address: Amravati,Maharashtra</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
